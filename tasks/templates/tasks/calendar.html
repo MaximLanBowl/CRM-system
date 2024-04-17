@@ -1,0 +1,16 @@
+
+<html>
+<head>
+    <title>Calendar</title>
+</head>
+<body>
+    <h1>Calendar</h1>
+
+    <a href="?year={{ prev_year }}&month={{ prev_month }}">Previous Month</a>
+    <a href="?year={{ next_year }}&month={{ next_month }}">Next Month</a>
+
+    <div>
+        {{ calendar|safe }}
+    </div>
+</body>
+</html>

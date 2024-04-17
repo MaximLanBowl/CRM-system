@@ -1,0 +1,10 @@
+{% extends 'accounts/base.html' %}
+
+{% block body %}
+<form method="post">
+    {% csrf_token %}
+    <h1>Welcome, {{ employee.user.username }}</h1>
+    <p>Status: {{ employee.status }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+</form>
+{% endblock %}

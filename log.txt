@@ -1,0 +1,714 @@
+2024-04-15 19:14:30,100 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-15 19:17:05,135 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py changed, reloading.
+2024-04-15 19:17:05,622 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-15 19:17:14,898 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py changed, reloading.
+2024-04-15 19:17:15,316 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-15 19:17:26,640 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/views.py changed, reloading.
+2024-04-15 19:17:26,989 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 09:55:22,011 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 09:55:23,182 [WARNING] django.request: Not Found: /
+2024-04-16 09:55:23,344 [WARNING] django.request: Not Found: /favicon.ico
+2024-04-16 09:57:14,952 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/CRMsys/settings.py changed, reloading.
+2024-04-16 09:59:14,980 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 09:59:15,891 [WARNING] django.request: Not Found: /
+2024-04-16 09:59:44,040 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 09:59:44,901 [WARNING] django.request: Not Found: /
+2024-04-16 10:00:00,380 [WARNING] django.request: Not Found: /products/ne
+2024-04-16 10:00:37,188 [ERROR] django.request: Internal Server Error: /products/monthly_report/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py", line 103, in monthly_report
+    return render(request, 'monthly_report.html',
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: monthly_report.html
+2024-04-16 10:01:09,003 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 10:01:19,265 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 10:02:31,065 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/models.py changed, reloading.
+2024-04-16 10:11:49,486 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 10:12:21,075 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/tasks/models.py changed, reloading.
+2024-04-16 11:51:55,043 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 11:51:56,540 [WARNING] django.request: Not Found: /
+2024-04-16 11:52:04,288 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 11:52:23,969 [WARNING] django.request: Not Found: /leads/new/
+2024-04-16 11:52:27,564 [WARNING] django.request: Not Found: /login
+2024-04-16 11:54:36,356 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 11:55:32,170 [WARNING] django.request: Not Found: /
+2024-04-16 11:55:59,152 [ERROR] django.request: Internal Server Error: /products/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (1, Backup, 100.0, Top, 0, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/forms/models.py", line 552, in save
+    self.instance.save()
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (1, Backup, 100.0, Top, 0, null).
+
+2024-04-16 11:56:21,636 [ERROR] django.request: Internal Server Error: /products/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (2, Backup, 0.3, Top, 0, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/forms/models.py", line 552, in save
+    self.instance.save()
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (2, Backup, 0.3, Top, 0, null).
+
+2024-04-16 11:56:49,895 [ERROR] django.request: Internal Server Error: /products/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (3, Backup, 100.0, Top, 0, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/forms/models.py", line 552, in save
+    self.instance.save()
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "date" of relation "products_product" violates not-null constraint
+DETAIL:  Failing row contains (3, Backup, 100.0, Top, 0, null).
+
+2024-04-16 11:57:17,222 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/models.py changed, reloading.
+2024-04-16 11:57:17,607 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 11:57:32,767 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 12:02:09,036 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:02:19,285 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:06:59,817 [ERROR] django.request: Internal Server Error: /products/products_report/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'contact.name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py", line 93, in products_report
+    return render(request, 'products/products_report.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'contact.name', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2024-04-16 12:07:01,058 [ERROR] django.request: Internal Server Error: /products/products_report/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 502, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'contact.name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py", line 93, in products_report
+    return render(request, 'products/products_report.html', {'products': products})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    raise self.error(token, e)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/defaulttags.py", line 861, in do_for
+    nodelist_loop = parser.parse(
+                    ^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 504, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 555, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 10: 'contact.name', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+2024-04-16 12:12:34,263 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:18:34,441 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/views.py changed, reloading.
+2024-04-16 12:18:34,990 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 12:22:38,990 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:22:49,246 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:33:04,240 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:43:04,289 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 12:48:59,663 [ERROR] django.request: Internal Server Error: /contacts/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+2024-04-16 12:50:07,579 [ERROR] django.request: Internal Server Error: /contacts/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+2024-04-16 12:52:05,264 [ERROR] django.request: Internal Server Error: /products/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+2024-04-16 12:52:14,440 [ERROR] django.request: Internal Server Error: /products/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/engine.py", line 163, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: products/_base.html
+2024-04-16 12:53:04,275 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 13:03:04,294 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 13:04:40,584 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/views.py changed, reloading.
+2024-04-16 13:04:41,130 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:13:09,004 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 13:13:19,259 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 13:13:45,505 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/models.py changed, reloading.
+2024-04-16 13:13:46,023 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:14:12,664 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/models.py changed, reloading.
+2024-04-16 13:14:13,102 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:14:35,303 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:14:52,224 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:15:28,047 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:16:45,564 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/contacts/models.py changed, reloading.
+2024-04-16 13:16:46,497 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:23:34,253 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-16 13:26:48,449 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/tasks/views.py changed, reloading.
+2024-04-16 13:26:48,915 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:27:24,672 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/tasks/views.py changed, reloading.
+2024-04-16 13:27:25,046 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-16 13:27:39,343 [ERROR] django.request: Internal Server Error: /tasks/new/
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "contact_id" of relation "tasks_task" violates not-null constraint
+DETAIL:  Failing row contains (1, start, 2024-04-11, 2024-04-18, 2024-04-16 13:27:39.286769+00, , null, 4).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 151, in post
+    return self.form_valid(form)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/views/generic/edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/forms/models.py", line 552, in save
+    self.instance.save()
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/maksim/python_basic_diploma/python/CRM/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "contact_id" of relation "tasks_task" violates not-null constraint
+DETAIL:  Failing row contains (1, start, 2024-04-11, 2024-04-18, 2024-04-16 13:27:39.286769+00, , null, 4).
+
+2024-04-17 14:21:08,264 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-17 14:21:09,508 [WARNING] django.request: Not Found: /
+2024-04-17 14:21:09,687 [WARNING] django.request: Not Found: /favicon.ico
+2024-04-17 14:21:17,034 [WARNING] django.request: Not Found: /sitemap.xml
+2024-04-17 14:25:50,934 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/models.py changed, reloading.
+2024-04-17 14:25:51,316 [INFO] django.utils.autoreload: Watching for file changes with StatReloader

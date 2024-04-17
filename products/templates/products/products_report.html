@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Products Report</title>
+</head>
+<body>
+<h1>Products Report</h1>
+<ul>
+    {% for product in products %}
+    <li> Товар: {{ product.name }}, Цена: {{ product.price }} руб.</li>
+    {% endfor %}
+    <a href="{% url 'products:list' %}" class="btn btn-primary">Вернуться к списку товаров</a>
+</ul>
+</body>
+</html>
