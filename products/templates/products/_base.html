@@ -2,6 +2,7 @@
 
 <html lang="ru">
 <head>
+    <title>Calendar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="{% static 'style.css' %}" rel="stylesheet">
@@ -20,6 +21,15 @@
                 </span>
             </h1>
         </div>
+        <footer>
+            <p>&copy; 2024 CRM</p>
+        </footer>
+
+        <h1>Calendar</h1>
+
+        <a href="?year={{ prev_year }}&month={{ prev_month }}">Previous Month</a>
+        <a href="?year={{ next_year }}&month={{ next_month }}">Next Month</a>
+            <hr>
         <ul class="list-unstyled px-2">
             {% if perms.tasks.view_tasks %}
             <li><a href="/tasks/" class="bar-item text-decoration-none px-3 py-3 d-block">
@@ -39,6 +49,20 @@
             <li>
                 <hr>
             </li>
+
+            <h5>Import from XML</h5>
+            <div>
+                <a href="{% url 'products:import_products_from_xml' %}">Import</a>
+            </div>
+            <h5>Export to XML</h5>
+            <div>
+                <a href="{% url 'products:export_products_to_xml' %}">Export</a>
+            </div>
+
+
+                <li>
+                <hr>
+            </li>
             <h2>{{ current_date }}</h2>
             {% for task in tasks %}
             <div>
@@ -52,6 +76,9 @@
     </div>
     <div class="content px-3 pt-4">
         {% block content %}{% endblock %}
+    </div>
+    <div>
+        {{ calendar|safe }}
     </div>
 </div>
 

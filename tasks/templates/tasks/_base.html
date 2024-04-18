@@ -1,6 +1,6 @@
 {% load static %}
 
-<html lang="en">
+<html lang="ru">
 <head>
     <title>Calendar</title>
     <meta charset="UTF-8">
@@ -21,11 +21,15 @@
                 </span>
             </h1>
         </div>
+        <footer>
+            <p>&copy; 2024 CRM</p>
+        </footer>
+
         <h1>Calendar</h1>
 
         <a href="?year={{ prev_year }}&month={{ prev_month }}">Previous Month</a>
         <a href="?year={{ next_year }}&month={{ next_month }}">Next Month</a>
-        <hr>
+            <hr>
         <ul class="list-unstyled px-2">
             {% if perms.tasks.view_tasks %}
             <li><a href="/tasks/" class="bar-item text-decoration-none px-3 py-3 d-block">
@@ -45,9 +49,13 @@
             <li>
                 <hr>
             </li>
+
             <h2>{{ current_date }}</h2>
-            <a href="{% url 'tasks:tasks_report' %}" class="btn btn-primary">Перейти к отчетам по задачам</a>
-                <hr>
+            {% for task in tasks %}
+            <div>
+                {{ task.title }} - {{ task.start_date }} - {{ task.end_date }}
+            </div>
+            {% endfor %}
             <li><a href="/accounts/logout" class="bar-item text-decoration-none px-3 py-3 d-block">
                 <span><i class="fas fa-sign-out-alt"></i></span><span class="px-1"> Выход</span>
             </a></li>

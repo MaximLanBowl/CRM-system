@@ -1,5 +1,6 @@
 from decimal import Decimal
 
+from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, DeleteView, DetailView, UpdateView
 
@@ -36,6 +37,7 @@ class ProductsDeleteView(DeleteView):
     model = Product
     success_url = reverse_lazy("products:list")
     template_name = 'products/products-delete.html'
+
 
 
 class ProductsDetailView(DetailView):
@@ -85,7 +87,7 @@ def export_products_to_xml(request):
 
     tree = etree.ElementTree(root)
     tree.write('products.xml', xml_declaration=True, encoding='utf-8', pretty_print=True)
-    return render(request, 'products/export_products.html', {'xml_generated': xml_generated})
+    return render(request, 'products/export_products_to_xml.html', {'xml_generated': xml_generated})
 
 
 def products_report(request):

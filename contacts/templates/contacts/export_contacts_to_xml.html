@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Export</title>
+</head>
+<body>
+<h1>Export to XML</h1>
+
+<form action="{% url 'contacts:export' %}" method="post">
+    {% csrf_token %}
+    <button type="submit">Export to XML</button>
+</form>
+
+    {% if xml_generated %}
+        <p>XML file has been generated successfully. You can download it <a
+        href="{% static 'contacts.xml' %}" download>here</a>.</p>
+    {% endif %}
+
+</body>
+</html>

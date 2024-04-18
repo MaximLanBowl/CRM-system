@@ -10,8 +10,8 @@
         <ul class="list-group">
             {% for contact in contacts %}
             <li class="list-group-item list-group-item-light d-flex justify-content-between">
-                <a href="/contacts/{{ contact.pk }}" class="text-decoration-none link-dark">{{contact.name}}</a>
-                <a href="/contacts/{{ contact.pk }}/delete" class="btn btn-danger">Удалить</a>
+                <a href="/contacts/{{ object.pk }}" class="text-decoration-none link-dark">{{ contact.pk }}</a>
+                <a href="/contacts/{{ object.pk }}/delete" class="btn btn-danger">Удалить</a>
             </li>
             {% endfor %}
         </ul>

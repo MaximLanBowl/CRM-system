@@ -21,6 +21,10 @@
                 </span>
             </h1>
         </div>
+        <footer>
+            <p>&copy; 2024 CRM</p>
+        </footer>
+
         <h1>Calendar</h1>
 
         <a href="?year={{ prev_year }}&month={{ prev_month }}">Previous Month</a>
@@ -41,23 +45,21 @@
             <li><a href="/contacts/" class="bar-item text-decoration-none px-3 py-3 d-block">
                 <span><i class="fas fa-user-clock"></i></span><span class="px-1"> Контакты</span>
             </a></li>
+            {% endif %}
             <li>
                 <hr>
             </li>
-            <h5>Import Contacts from XML</h5>
-            <form action="{% url 'products:import_products_from_xml' %}" method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                <input type="file" name="xml_file" accept=".xml">
-                <button type="submit">Import</button>
-            </form>
 
-            <h5>Export Contacts to XML</h5>
-            <form action="{% url 'products:export_products_to_xml' %}" method="post">
-                {% csrf_token %}
-                <button type="submit">Export Products to XML</button>
-            </form>
+            <h5>Import from XML</h5>
+            <div>
+                <a href="{% url 'contacts:import_contacts_from_xml' %}">Import</a>
+            </div>
+            <h5>Export to XML</h5>
+            <div>
+                <a href="{% url 'contacts:export_contacts_to_xml' %}">Export</a>
+            </div>
 
-            {% endif %}
+
             <li>
                 <hr>
             </li>

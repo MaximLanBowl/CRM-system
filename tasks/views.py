@@ -29,7 +29,7 @@ class TaskCreateView(CreateView):
 class TaskDeleteView(DeleteView):
     model = Task
     success_url = reverse_lazy("tasks:list")
-    template_name = 'tasks/task-delete.html'
+    template_name = 'tasks/tasks-delete.html'
 
 
 class TaskDetailView(DetailView):

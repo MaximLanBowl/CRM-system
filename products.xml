@@ -1,2 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<products/>
+<products>
+  <product>
+    <name>1</name>
+    <description>1</description>
+    <price>1.0</price>
+    <quantity>0</quantity>
+  </product>
+  <product>
+    <name>CRM</name>
+    <description>first</description>
+    <price>100.0</price>
+    <quantity>0</quantity>
+  </product>
+</products>

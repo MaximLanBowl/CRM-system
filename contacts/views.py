@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, UpdateView, DetailView, DeleteView, CreateView
@@ -31,7 +31,12 @@ class ContactCreateView(CreateView):
 class ContactDeleteView(DeleteView):
     model = Contact
     success_url = reverse_lazy("contacts:list")
-    template_name = 'contacts/contacts-delete.html'
+
+    def form_valid(self, form):
+        success_url = self.get_success_url()
+        self.object.archive = True
+        self.object.save()
+        return HttpResponseRedirect(success_url)
 
 
 class ContactDetailView(DetailView):
@@ -54,7 +59,7 @@ class ContactUpdateView(UpdateView):
 
 def import_contacts_from_xml(request):
     if request.method == 'POST':
-        xml_file = request.FILES['xml_file']
+        xml_file = request.FILES['xml_file.xml']
         tree = etree.parse(xml_file)
         root = tree.getroot()
 
@@ -70,7 +75,7 @@ def import_contacts_from_xml(request):
             contact.save()
 
         return HttpResponse('Данные успешно импортированы')
-    return render(request, 'import_products.html')
+    return render(request, 'contacts/import_contacts_from_xml.html')
 
 
 def export_contacts_to_xml(request):
