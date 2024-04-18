@@ -1788,3 +1788,6 @@ Traceback (most recent call last):
 django.urls.exceptions.NoReverseMatch: Reverse for 'list' with keyword arguments '{'pk': 12}' not found. 1 pattern(s) tried: ['products/\\Z']
 2024-04-18 11:04:44,181 [INFO] django.utils.autoreload: /Users/maksim/python_basic_diploma/python/CRM/CRMsys/products/views.py changed, reloading.
 2024-04-18 11:04:44,751 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2024-04-18 11:12:22,394 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-18 11:22:26,447 [WARNING] django.request: Not Found: /blog/article/latest/feed/
+2024-04-18 11:22:37,384 [WARNING] django.request: Not Found: /blog/article/latest/feed/
